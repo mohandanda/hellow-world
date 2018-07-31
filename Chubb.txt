@@ -1,0 +1,46 @@
+IBM
+
+Involed  Analysis, design and development of Federal Reserve Bank ACH PROJECT. 
+
+Involved Custom Validation for Participant Directory.
+
+User Exit (an extension point which user can override the default behavior) is used in custom validation.
+
+Responsible for software integration and testing.
+
+Worked with Business analyst and Client on requirements.
+
+Woked with product Team on Design the custom validation.
+
+Invovled in user acceptance testing.
+
+Chubb
+
+Involved in Analysis, design and development of Bond Processing and Bond Booking systems. 
+
+The transactions include New line, Post Bond, Rating and Registration and downstream booking.
+
+Involved in enhancement of AMS and Cornerstone production support.
+
+AMS houses all field rates and associated commissions.
+
+AMS has a comprehensive service center profile for bond handling. Involved in Bluprint enhancements. 
+
+Bluprint is vender developed application.
+
+Integrate Bluprint to Exact target marketing cloud with external Vender
+
+Involved in integration of Bond services with new systems using Informatica.
+
+Provided guidance,direction and training to the production support off-shore team (located in India) which resulted in timely root cause analysis, problem identification, and problem resolution.
+
+worked on a large scale, complex data migration initiative, as a result of a corporate acquisition, which led to the data transformation and consolidation of 300+ database entities.
+
+Coordinated and assisted during problem resolution, escalated issues as need and provided constant status updates to stakeholders. 
+
+Provided production support which resulted in timely error resolution.
+
+
+
+
+
