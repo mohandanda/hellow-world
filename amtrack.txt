@@ -1,0 +1,28 @@
+
+
+Over 14 years of experience in IT and over 6 years of planning, design, architecture, deployment, testing and administration of Web Solutions using Websphere, WebLogic, Apache Tomcat Application Servers.
+
+10+ years in Financial and 4 years in Telecommunications Industry.
+
+Experience in installing, configuring, and administering WebLogic Server and Websphere in various environments. Installed, Deployed and maintenance of Enterprise Applications on Tomcat, Websphere and Weblogic. Monitored Websphere server resources using ca introscope.Experience in analyzing the Thread dumps for various performance issue on Websphere application environment.
+
+Experienced in Release Management, Change Management, Installation and Support of QA and Production  
+Environments.Performed migration of the software and integration and testing. Coordinated and assisted during problem resolution, escalated issues as need and provided constant status updates to stakeholders. Provided guidance, direction and training to the production support offshore team which resulted in timely root cause analysis, problem identification, and problem resolution.Involved in periodic DR Testing and Exercising.Involved in DR Re-Engineering project. 
+
+Adaptive to Cloud Strategies based on AWS.Technical knowledge on EC2, IAM, S3, VPC. Familiar with Devops tools like jira. Familiar with automation and deployment utilities using Ruby, Bash, Powershell, Python and Rundeck. Familiar with configuration management using Puppet Chef and Ansible.
+
+Worked on a large scale, complex data migration initiative, as a result of a corporate acquisition, which led to the data transformation and consolidation of 300+ database entities.
+
+3 years of experience front-end development skills in JSP, JavaScript, Ajax, CSS, HTML, DHTML and XML. Experience in J2EE, relational databases, Servlets, EJB, Struts, spring and Hibernate.Experience in web application development using J2EE related technologies.
+
+Five years of design and development experience with Sybase and Oracle using stored proc and sql.
+
+Experience in core java C, C++, UNIX Systems Programming (Internals), Shell Programming, Multi Threading. Hands on experience in C, C++ on different flavors of UNIX (SUN SOLARIS, AIX, HP).
+Three years of development experience in Network Programming with TCP/IP, UDP, Sockets and IPCS.Experience in multithreaded programming in Sun Solaris and DEC UNIX Environments using POSIX and Pthreads.
+
+
+Five years of design and development experience with Sybase and Oracle using stored proc and sql.
+
+
+Excellent Analytical, Communication, Presentation and Interpersonal skills.
+
