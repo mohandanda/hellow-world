@@ -1,0 +1,322 @@
+Object
+Any entity that has state and behavior is known as an object. For example: chair, pen, table, keyboard, bike etc. It can be physical and logical.
+
+Class
+Collection of objects is called class. It is a logical entity.
+
+Polymorphism
+When one task is performed by different ways i.e. known as polymorphism. For example: to convince the customer differently, to draw something e.g. shape or rectangle etc.
+
+In java, we use method overloading and method overriding to achieve polymorphism.
+
+Another example can be to speak something e.g. cat speaks meaw, dog barks woof etc.
+
+Abstraction
+Hiding internal details and showing functionality is known as abstraction. For example: phone call, we don't know the internal processing.
+
+In java, we use abstract class and interface to achieve abstraction.
+
+Encapsulation
+Binding (or wrapping) code and data together into a single unit is known as encapsulation. For example: capsule, it is wrapped with different medicines.
+
+A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here.
+
+
+
+what is difference object and class
+class: a class describes the contents of the objects that belong to it: it describes an aggregate of data fields (called instance variables), and defines the operations (called methods). object: an object is an element (or instance) of a class; objects have the behaviors of their class.
+how to create thread
+extending the Thread class and implementing the Runnable interface
+
+implementing the Runnable interface
+class MyThread implements Runnable
+{
+ public void run()
+ {
+  System.out.println("concurrent thread started running..");
+ }
+}
+
+class MyThreadDemo
+{
+ public static void main( String args[] )
+ {
+  MyThread mt = new MyThread();
+  Thread t = new Thread(mt);
+  t.start();
+ }
+}
+extending the Thread class
+class MyThread extends Thread
+{
+ public void run()
+ {
+  System.out.println("concurrent thread started running..");
+ }
+}
+
+classMyThreadDemo
+{
+ public static void main( String args[] )
+ {
+  MyThread mt = new  MyThread();
+  mt.start();
+ }
+}
+
+Bitness	Stack Size	Max threads
+32-bit	 64K	32,073
+32-bit	128K	20,549
+32-bit	256K	11,216
+64-bit	 64K	stack too small
+64-bit	128K	32,072
+64-bit	512K	32,072
+
+try catch
+
+Checked vs Unchecked Exceptions in Java
+1.8
+In Java, there two types of exceptions:
+
+1) Checked: are the exceptions that are checked at compile time. If some code within a method throws a checked exception, then the method must either handle the exception or it must specify the exception using throws keyword.
+Unchecked are the exceptions that are not checked at compiled time. In Java exceptions under Error and RuntimeException classes are unchecked exceptions, everything else under throwable is checked.
+
+throws clause is used to declare an exception and throw keyword is used to throw an exception explicitly. ... The keyword throw is used inside method body to invoke an exception and throws clause is used in method declaration 
+indexing in db
+hash and equal method
+ejb advantages 
+Benefits of Enterprise Java Beans EJB. EJB container provides System level services to enterprise java beans. EJB developer just focus on business logic and on solving business problems. Because business logic lies in EJB, so Front end developer can focus on the presentation of client interface.
+Benefits of Enterprise Java Beans EJB
+EJB technology enables rapid and simplified the process of distributed, transactional, secure and portable java desktop applications development and Java ee web applications development because 
+EJB container provides System level services to enterprise java beans.
+EJB developer just focus on business logic and on solving business problems.
+Because business logic lies in EJB, so Front end developer can focus on the presentation of client interface.
+The client developer does not have to code the routines that implement business rules or access databases. As a result, clients side has less codes which is  particularly important for clients that run on small devices.
+Java Beans are portable components which enable the java application assembler to build new applications from existing java beans.
+EJB is a standard API due to which applications build on EJB can run on any complaint Java EE web application server.
+
+beans
+Process and thread
+Threads are used for small tasks, whereas processes are used for more 'heavyweight' tasks – basically the execution of applications. Another difference between a thread and a process is that threads within the same process share the same address space, whereas different processes do not
+
+Jpa
+The Java Persistence API (JPA) is a Java specification for accessing, persisting, and managing data between Java objects / classes and a relational database. JPA was defined as part of the EJB 3.0 specification as a replacement for the EJB 2 CMP Entity Beans specification.
+Abstract classes
+
+Abstract classes are classes that contain one or more abstract methods. An abstract method is a method that is declared, but contains no implementation. Abstract classes may not be instantiated, and require subclasses to provide implementations for the abstract methods.
+
+When you want a base class which should not be instantiated and have some common functionality for every class well as different implementation of a method in derived classes for other methods. 2. Abstract classes allow you to provide default functionality for the subclasses
+
+
+When used with objects, the == operator compares the two object references and determines whether they refer to the same instance. equals() is a method available in the String class that is used to compare two strings and determine whether they are equal.
+
+ When you use “==” (i.e. shallow comparison), you are actually comparing the two object references to see if they point to the same object. When you use “equals(…)”, which is a “deep comparison” that compares the actual string values. 
+ 
+When we create a String using double quotes, JVM looks in the String pool to find if any other String is stored with same value. If found, it just returns the reference to that String object else it creates a new String object with given value and stores it in the String pool.
+When we use new operator, JVM creates the String object but don’t store it into the String Pool. We can use intern() method to store the String object into String pool or return the reference if there is already a String with equal value present in the pool.
+
+Why is a char array i.e char[] preferred over String to store a password?
+A. String is immutable in Java and stored in the String pool. Once it is created it stays in the pool until garbage collected. This has greater risk of 1) someone producing a memory dump to find the password 2) the application inadvertently logging password as a readable string.
+
+If you use a char[] instead, you can override it with some dummy values once done with it, and also logging the char[] like “[C@5829428e” is not as bad as logging it as String “password123”.
+
+JVM
+JVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment in which java bytecode can be executed.
+
+JVMs are available for many hardware and software platforms. JVM, JRE and JDK are platform dependent because configuration of each OS differs. But, Java is platform independent.
+
+The JVM performs following main tasks:
+
+Loads code
+Verifies code
+Executes code
+Provides runtime environment
+
+JRE
+JRE is an acronym for Java Runtime Environment.It is used to provide runtime environment.It is the implementation of JVM. It physically exists. It contains set of libraries + other files that JVM uses at runtime.
+
+JDK
+JDK is an acronym for Java Development Kit.It physically exists.It contains JRE + development tools.
+
+JVM (Java Virtual Machine): It is an abstract machine. It is a specification that provides run-time environment in which java bytecode can be executed. It follows three notations:
+
+Specification: It is a document that describes the implementation of the Java virtual machine. It is provided by Sun and other companies.
+Implementation: It is a program that meets the requirements of JVM specification.
+Runtime Instance: An instance of JVM is created whenever you write a java command on the command prompt and run the class.
+JRE (Java Runtime Environment) : JRE refers to a runtime environment in which java bytecode can be executed. It implements the JVM (Java Virtual Machine) and provides all the class libraries and other support files that JVM uses at runtime. So JRE is a software package that contains what is required to run a Java program. Basically, it’s an implementation of the JVM which physically exists. 
+
+JDK(Java Development Kit) : It is the tool necessary to compile, document and package Java programs. The JDK completely includes JRE which contains tools for Java programmers. The Java Development Kit is provided free of charge. Along with JRE, it includes an interpreter/loader, a compiler (javac), an archiver (jar), a documentation generator (javadoc) and other tools needed in Java development. In short, it contains JRE + development tools.
+
+
+delete and truncate
+
+No DML triggers will be fired. The operation cannot be rolled back. DROP and TRUNCATE are DDL commands, whereas DELETE is a DML command. Therefore DELETE operations can be rolled back (undone), while DROP and TRUNCATE operations cannot be rolled back.N
+
+
+What is the simplest SQL Query to find the second largest value?
+
+SELECT MAX( col )
+  FROM table
+ WHERE col < ( SELECT MAX( col )
+                 FROM table )
+                 
+                 
+                 ‘finalize‘ is called when an object is garbage collected. You rarely need to override it. It should not be used to release non-memory resources like file handles, sockets, database connections, etc because Java has only a finite number of these resources and you do not know when the Garbage Collection (i.e. GC) is going to kick in to release these non-memory resources through the finalize( ) method.
+                 
+                 Overloading deals with multiple methods in the same class with the same name but different method signatures. Both the below methods have the same method names but different method signatures, which mean the methods are overloaded.
+ This happens at compile-time. This is also called compile-time polymorphism because the compiler must decide which method to run based on the data types of the arguments. If the compiler were to compile the statement:  
+ 
+ Overriding deals with two methods, one in the parent class and the other one in the child class and has the same name and same signatures. Both the below methods have the same method names and the signatures but the method in the subclass “B” overrides the method in the superclass (aka the parent class) “A”.
+ 
+ how to handle expceptions in main thread
+ exception Manager design
+ diffrence between wait and sleep
+ what Join in thread
+ why not abstract method in constucter
+ how to change the logging level on run time
+ fail safe and fail fast iterator
+ 
+ Java lambda expressions are new in Java 8. Java lambda expressions are Java's first step into functional programming. A Java lambda expression is thus a function which can be created without belonging to any class. A lambda expression can be passed around as if it was an object and executed on demand.
+
+Steps involving implementing ETL Process:-
+
+Step 1. :- Creation of source definition
+
+Step 2 :- Creation of target definition
+
+Step 3:- design a mapping with (or) without transformation rule  Workflow manager
+
+Step 4:- Create a session for each mapping
+
+Step 5:- Create work flow
+
+Step 6:- Start Work flow.
+
+The faces-config.xml defines:
+
+Managed Bean - the data elements of the JSF application (managed beans and backing beans) represent a Java class which will be created dynamically during runtime of the JSF application. It can be defined for which scope the bean is valid (Session, Request, Application or none)
+
+the navigation between web pages
+
+data validators - Used to check the validity of UI input
+
+data converters -Used to translate between UI and model
+
+
+Let's see the simple example of spring web MVC framework. There are given 7 steps for creating the spring MVC application. The steps are as follows:
+
+Create the request page (optional)
+Create the controller class
+Provide the entry of controller in the web.xml file
+Define the bean in the xml file
+Display the message in the JSP page
+Load the spring core and mvc jar files
+Start server and deploy the project
+
+
+
+Steps
+Let's see what are the simple steps for hibernate and spring integration:
+
+
+
+create table in the database It is optional.
+create applicationContext.xml file It contains information of DataSource, SessionFactory etc.
+create Employee.java file It is the persistent class
+create employee.hbm.xml file It is the mapping file.
+create EmployeeDao.java file It is the dao class that uses HibernateTemplate.
+create InsertTest.java file It calls methods of EmployeeDao class.
+
+Representational state transfer (REST) or RESTful web services are a way of providing interoperability between computer systems on the Internet. ... In a RESTful Web service, requests made to a resource's URI will elicit a response that may be in XML, HTML, JSON or some other defined format.
+
+data base modeling many to many relation ship
+
+hash map working colision etc
+jsp debugging
+
+transaction Management
+prime number
+What Is Anagram?
+Two strings are called anagrams if they contain same set of characters but in different order. For example, “Dormitory – Dirty Room”, “keep – peek”,  “School Master – The Classroom” are some anagrams.
+
+1) Anagram Program In Java Using sort() and equals() Methods
+First we clean the input by removing all white spaces from the given two strings and change the case of all characters of both the strings to lower case so that case of both input strings will be ignored. After cleaning the input strings, we convert them to character array and sort them using sort() method of java.util.Arrays class. After sorting, we compare both the arrays using equals() method of same Arrays class.This method will return true if both arrays have same set of characters. Below is the complete anagram program using sort() and equals() methods.
+
+junit
+
+
+This is neccesary because main() is called by the JVM before any objects are made. Since it is static it can be directly invoked via the class. Similarly, we use static sometime for user defined methods so that we need not to make objects. void indicates that the main() method being declared does not return a value.
+If a class have an entity reference, it is known as Aggregation. Aggregation represents HAS-A relationship.
+Code reuse is also best achieved by aggregation when there is no is-a relationship.
+Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
+
+DAO
+The Data Access Object is basically an object or an interface that provides access to an underlying database or any other persistence storage.
+
+Data Access Object Pattern or DAO pattern is used to separate low level data accessing API or operations from high level business services. Following are the participants in Data Access Object Pattern.
+
+Data Access Object Interface - This interface defines the standard operations to be performed on a model object(s).
+
+Data Access Object concrete class - This class implements above interface. This class is responsible to get data from a data source which can be database / xml or any other storage mechanism.
+
+Model Object or Value Object - This object is simple POJO containing get/set methods to store data retrieved using DAO class.
+
+
+
+wrapper classes.
+
+All the wrapper classes (Integer, Long, Byte, Double, Float, Short) are subclasses of the abstract class Number.
+
+Autoboxing is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes. For example, converting an int to an Integer, a double to a Double, and so on. If the conversion goes the other way, this is called unboxing.
+
+A view uses a query to pull data from the underlying tables. A materialized view is a table on disk that contains the result set of a query. Materialized views are primarily used to increase application performance when it isn't feasible or desirable to use a standard view with indexes applied to it.
+
+hashmap, hasset
+
+HashSet does not allow duplicate keys and is not synchronized, allows a null key (read HashSet (Java Platform SE 7 ) for more). HashMap is not synchronized but allows duplicate keys, it also allows one null key and as many null values as you like (read HashMap (Java Platform SE 7 ) for more).
+
+Big O notation is used in Computer Science to describe the ion time required or the space used (e.g. in memory or on disk) by an algorithm.
+
+
+There are 5 steps to connect any java application with the database in java using JDBC. They are as follows:
+Register the driver class
+The forName() method of Class class is used to register the driver class. This method is used to dynamically load the driver class.
+Class.forName("oracle.jdbc.driver.OracleDriver");  
+Creating connection
+Connection con=DriverManager.getConnection(  
+"jdbc:oracle:thin:@localhost:1521:xe","system","password");  
+Creating statement
+Statement stmt=con.createStatement();  
+Executing queries
+ResultSet rs=stmt.executeQuery("select * from emp");
+
+CallableStatement interface is used to call the stored procedures and functions.
+CallableStatement stmt=con.prepareCall("{call myprocedure(?,?)}");  
+
+Transaction represents a single unit of work.
+
+void setAutoCommit(boolean status)	It is true bydefault means each transaction is committed bydefault.
+void commit()	commits the transaction.
+void rollback()	cancels the transaction.
+
+
+
+Actual answer is we have 14 types of triggers in pl sql.
+For statement level :-
+1-before insert
+2-before update
+3-before delete
+4-after insert
+5-after update
+6-after delete 
+For row level :-
+7-before insert
+8-before update
+9-before delete
+10-after insert 
+11-after update
+12-after delete
+And the rest two are
+13-instead of trigger
+14-system trigger
+Closing connection

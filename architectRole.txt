@@ -1,0 +1,12 @@
+﻿scaling
+performance 
+web servers performance
+Architecture diagrams
+Martin fawler
+production the process
+junit
+cloud 
+provisening 
+networking 
+jvm memory management
+splunk
